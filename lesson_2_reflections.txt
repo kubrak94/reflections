@@ -23,3 +23,24 @@ What are some situations when branches would be helpful in keeping your history 
 If I want to make an experimental change or add feature that is not completely yet, I can commit those changes in a branch.
 So, the master branch would contain official version, and all experiments will be available as well.
 
+How do the diagrams help you visualize the branch structure?
+
+These diagrams can point out that I can make an unreachable commit.
+Also, I am able to see the structure and interrelations among branches.
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+
+When two branches merged, the new repository is created which contain:
+- all lines that was in the repository from which two branches separated;
+- all lines that present in one of branch and not in the ancestor repository;
+- no lines that were in the ancestor and not in one of the merging repositories.
+We represent in the diagrams in such way, so we can clearly see the history of merging repositories.
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+
+Git's automatic merging:
++ it allows easily incorporate some low coupled changes
+- it is not able to make merging even when there is a little intersection
+Merging manually:
++ you can easily incorporate tiny changes together even if they are higly coupled
+- it is tediuos when merging is big
