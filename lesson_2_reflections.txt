@@ -1,0 +1,15 @@
+What happens when you initialize a repository? Why do you need to do it?
+
+When I initialize a repository, the new .git directory created in the folder, and an empty git repository created.
+There's no commits during the creation of repository.
+To create a new repository, I need to call a command git init in a directory, which I wish to track.
+
+How is the staging area different from the working directory and the repository? What value do you think it offers?
+
+Staging area is something intermediate between working directory and repository.
+In this area one can add files to be in the next commit.
+Also, if one has changes his mind, he can remove the files from it.
+However, those operations won't affect contents of repository and working directory.
+It offers the value of logical structuring every commit.
+A programmer is able to commit only desirable files, not the whole pile of them.
+
