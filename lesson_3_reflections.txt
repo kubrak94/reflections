@@ -6,4 +6,34 @@ and I can see other's contribution as well.
 Why might you want to always pull changes manually rather than having Git automatically stay up-to-date with your remote repository?
 
 Because I might work with a team and in the repository there might be changes that I don't need.
+Or some introduced changes might occur in the moment when I'm working and it could ruin my work.
 
+Describe the differences between forks, clones, and branches. When would you use one instead of another?
+
+Fork - when you copy someone's repository to your account on the GitHub.
+The link to the original repository exists.
+Clone - when you copy someone's repository to your machine. 
+If you'll push it to your GitHub, no link to original repository will be provided.
+Branch - new development way of your repository that stores on your machine.
+Forking are using when you want to use someone's code and make your changes into it without interfering original one.
+Cloning are good when you're going to introduce changes into exact repository.
+Branch are needed when you would like to implement a new feature, which is not a part of official version of the program.
+
+What is the benefit of having a copy of the last known state of the remote stored locally?
+
+By having such copy I can be sure that remote changes won't affect mine if I had introduced changes that interfere with remote.
+In this case the Git will point things out and I can manually merge the files together.
+
+How would you collaborate without using Git or GitHub? What would be easier, and what would be harder?
+
+It would be definetly harder to introduce simultaneously changes without GitHub.
+Merging changes that are in the different place of file would be harder to perform without GitHub.
+Maybe easier would be making pull requests (just ask a master to incorporate).
+But still the GitHub approach provides more order.
+
+When would you want to make changes in a separate branch rather than directly in master? What benefits does each approach have?
+
+When there's a feature that I'm working on, but it isn't in the official version of the program.
+Assume that master branch contains official version.
+With this approach I am able to keep untouched the official version.
+Though, such approach is much more complicated than just pushing everything in a master branch.
